@@ -1,12 +1,12 @@
 {
     "x":0,
     "type":"Scene",
-    "selectedBox":2,
-    "selecteID":13,
+    "selectedBox":73,
+    "selecteID":91,
     "searchKey":"Scene",
     "props":{"width":1136,"sceneColor":"#000000","height":640},
     "nodeParent":-1,
-    "maxID":73,
+    "maxID":93,
     "label":"Scene",
     "isOpen":true,
     "isDirectory":true,
@@ -17,10 +17,10 @@
         {
             "x":15,
             "type":"Sprite",
-            "searchKey":"Sprite,LoginPanel,loginLayer",
-            "props":{"y":0,"x":0,"width":1136,"visible":false,"var":"loginLayer","name":"LoginPanel","height":640},
+            "searchKey":"Sprite,LoginLayer,loginLayer",
+            "props":{"y":0,"x":0,"width":1136,"visible":false,"var":"loginLayer","name":"LoginLayer","height":640},
             "nodeParent":2,
-            "label":"LoginPanel",
+            "label":"LoginLayer",
             "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
@@ -70,16 +70,16 @@
                         ],
                     "$HIDDEN":false
                 }],
-            "$HIDDEN":true
+            "$HIDDEN":false
         },
         {
             "x":15,
             "type":"Sprite",
-            "searchKey":"Sprite,GamePanel,gameLayer",
-            "props":{"y":0,"x":0,"width":1136,"visible":true,"var":"gameLayer","name":"GamePanel","height":640},
+            "searchKey":"Sprite,GameLayer,gameLayer",
+            "props":{"y":0,"x":0,"width":1136,"visible":true,"var":"gameLayer","name":"GameLayer","height":640},
             "nodeParent":2,
-            "label":"GamePanel",
-            "isOpen":false,
+            "label":"GameLayer",
+            "isOpen":true,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
@@ -98,6 +98,234 @@
                     "compId":14,
                     "child":[
                         ]
+                },
+                {
+                    "x":30,
+                    "type":"Sprite",
+                    "searchKey":"Sprite,topPanel",
+                    "props":{"y":0,"x":568,"name":"topPanel"},
+                    "nodeParent":13,
+                    "label":"topPanel",
+                    "isOpen":true,
+                    "isDirectory":true,
+                    "isAniNode":true,
+                    "hasChild":true,
+                    "compId":73,
+                    "child":[
+                        {
+                            "x":45,
+                            "type":"Label",
+                            "searchKey":"Label,times",
+                            "props":{"y":14,"x":-358,"text":"次数","name":"times","fontSize":18,"color":"#ffffff"},
+                            "nodeParent":73,
+                            "label":"times",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":90,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "x":45,
+                            "type":"Label",
+                            "searchKey":"Label,scoreLabel",
+                            "props":{"y":11.5,"x":13,"text":"分数","name":"scoreLabel","fontSize":20,"color":"#ffffff"},
+                            "nodeParent":73,
+                            "label":"scoreLabel",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":91,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "x":45,
+                            "type":"ProgressBar",
+                            "searchKey":"ProgressBar,chanceTime",
+                            "props":{"y":10,"x":-10,"width":301,"skin":"ui/progress_time.png","pivotX":301,"name":"chanceTime","height":23},
+                            "nodeParent":73,
+                            "label":"chanceTime",
+                            "isOpen":true,
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":74,
+                            "child":[
+                                ]
+                        },
+                        {
+                            "x":45,
+                            "type":"Box",
+                            "searchKey":"Box,score",
+                            "props":{"y":10,"x":63,"name":"score"},
+                            "nodeParent":73,
+                            "label":"score",
+                            "isOpen":true,
+                            "isDirectory":true,
+                            "isAniNode":true,
+                            "hasChild":true,
+                            "compId":75,
+                            "child":[
+                                {
+                                    "x":60,
+                                    "type":"Clip",
+                                    "searchKey":"Clip,num0",
+                                    "props":{"skin":"ui/clip_number.png","name":"num0","clipX":10},
+                                    "nodeParent":75,
+                                    "label":"num0",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":76,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Clip",
+                                    "searchKey":"Clip,num1",
+                                    "props":{"y":0,"x":18,"skin":"ui/clip_number.png","name":"num1","clipX":10},
+                                    "nodeParent":75,
+                                    "label":"num1",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":79,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Clip",
+                                    "searchKey":"Clip,num2",
+                                    "props":{"y":0,"x":36,"skin":"ui/clip_number.png","name":"num2","clipX":10},
+                                    "nodeParent":75,
+                                    "label":"num2",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":81,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Clip",
+                                    "searchKey":"Clip,num3",
+                                    "props":{"y":0,"x":54,"skin":"ui/clip_number.png","name":"num3","clipX":10},
+                                    "nodeParent":75,
+                                    "label":"num3",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":82,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Clip",
+                                    "searchKey":"Clip,num4",
+                                    "props":{"y":0,"x":72,"skin":"ui/clip_number.png","name":"num4","clipX":10},
+                                    "nodeParent":75,
+                                    "label":"num4",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":83,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Clip",
+                                    "searchKey":"Clip,num5",
+                                    "props":{"y":0,"x":90,"skin":"ui/clip_number.png","name":"num5","clipX":10},
+                                    "nodeParent":75,
+                                    "label":"num5",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":84,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Clip",
+                                    "searchKey":"Clip,num6",
+                                    "props":{"y":0,"x":108,"skin":"ui/clip_number.png","name":"num6","clipX":10},
+                                    "nodeParent":75,
+                                    "label":"num6",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":85,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Clip",
+                                    "searchKey":"Clip,num7",
+                                    "props":{"y":0,"x":126,"skin":"ui/clip_number.png","name":"num7","clipX":10},
+                                    "nodeParent":75,
+                                    "label":"num7",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":86,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Clip",
+                                    "searchKey":"Clip,num8",
+                                    "props":{"y":0,"x":144,"skin":"ui/clip_number.png","name":"num8","clipX":10},
+                                    "nodeParent":75,
+                                    "label":"num8",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":87,
+                                    "child":[
+                                        ]
+                                },
+                                {
+                                    "x":60,
+                                    "type":"Clip",
+                                    "searchKey":"Clip,num9",
+                                    "props":{"y":0,"x":162,"skin":"ui/clip_number.png","name":"num9","clipX":10},
+                                    "nodeParent":75,
+                                    "label":"num9",
+                                    "isDirectory":false,
+                                    "isAniNode":true,
+                                    "hasChild":false,
+                                    "compId":88,
+                                    "child":[
+                                        ]
+                                }]
+                        },
+                        {
+                            "x":45,
+                            "type":"Script",
+                            "switchAble":true,
+                            "source":"src/layer/GameTopPanel.ts",
+                            "searchKey":"Script,GameTopPanel",
+                            "removeAble":true,
+                            "props":{},
+                            "nodeParent":73,
+                            "label":"GameTopPanel",
+                            "isDirectory":false,
+                            "isAniNode":true,
+                            "hasChild":false,
+                            "compId":92,
+                            "child":[
+                                ]
+                        }]
                 },
                 {
                     "x":30,
@@ -511,7 +739,7 @@
                     "child":[
                         ]
                 }],
-            "$HIDDEN":false
+            "$HIDDEN":true
         }],
     "animations":[
         {
