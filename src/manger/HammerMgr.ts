@@ -36,6 +36,7 @@ export default class HannerMgr extends Laya.Script {
 
     onMouseDown(data: Laya.Event) {
         this.onHammerPlay();
+        ListenerMgr.Instance().event('onHammerHit',this.hammer)
     }
 
     onMouseMove(data: Laya.Event) {

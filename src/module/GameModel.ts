@@ -24,6 +24,16 @@ export default class GameModel {
         this._curMouseType = type;
     }
 
+    private _curHoleIdx: number;
+
+    public get curHoleIdx() {
+        return this._curHoleIdx;
+    }
+
+    public set curHoleIdx(idx) {
+        this._curHoleIdx = idx;
+    }
+
     private _hearCount: number;
 
     public getHearCount() {
@@ -46,4 +56,6 @@ export default class GameModel {
     public set gameScore(num: number) {
         this._gameScore = num;
     }
+    
+
 }

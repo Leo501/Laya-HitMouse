@@ -79,7 +79,7 @@
             "props":{"y":0,"x":0,"width":1136,"visible":true,"var":"gameLayer","name":"GamePanel","height":640},
             "nodeParent":2,
             "label":"GamePanel",
-            "isOpen":true,
+            "isOpen":false,
             "isDirectory":true,
             "isAniNode":true,
             "hasChild":true,
@@ -512,23 +512,6 @@
                         ]
                 }],
             "$HIDDEN":false
-        },
-        {
-            "x":15,
-            "type":"Script",
-            "switchAble":true,
-            "source":"src/scene/GameScene.ts",
-            "searchKey":"Script,GameScene",
-            "removeAble":true,
-            "props":{},
-            "nodeParent":2,
-            "label":"GameScene",
-            "isDirectory":false,
-            "isAniNode":true,
-            "hasChild":false,
-            "compId":29,
-            "child":[
-                ]
         }],
     "animations":[
         {
